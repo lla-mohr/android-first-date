@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Specify button menu for saving new contact -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_save_new"
+        android:icon="@drawable/save"
+        android:title="@string/action_save"
+        android:showAsAction="ifRoom"/>
+</menu>

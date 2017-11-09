@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.laurel.contactmanager" >
+
+    <!-- For my particular application, specifiy parents and activities -->
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/contacts"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <activity
+            android:name=".ContactListActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ContactDetailActivity"
+            android:label="@string/title_contact_detail"
+            android:parentActivityName=".ContactListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ContactListActivity" />
+        </activity>
+
+        <activity
+            android:name=".NewContactActivity"
+            android:label="@string/new_user"
+            android:parentActivityName=".ContactListActivity"
+            android:windowSoftInputMode="stateVisible" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ContactListActivity" />
+        </activity>
+    </application>
+    <!-- Allow to write to phone's storage-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+</manifest>

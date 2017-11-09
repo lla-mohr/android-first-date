@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--Specify strings for application use -->
+    <string name="app_name">People</string>
+    <string name="title_contact_detail">Contact Detail</string>\
+    <string name="new_user">Add New Contact</string>
+    <string name="action_save">Save</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_add">Add</string>
+    <string name="field_first">First Name</string>
+    <string name="field_last">Last Name</string>
+    <string name="field_phone">Phone Number</string>
+    <string name="field_email">Email</string>
+    <string name="button_save">Save</string>
+    <string name="button_cancel">Cancel</string>
+</resources>

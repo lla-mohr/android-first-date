@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contact_new_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    tools:context=".NewContactFragment"
+    android:orientation="vertical">
+    <!-- Specify layout for text entry -->
+    <EditText android:id="@+id/edit_first_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/field_first"
+        android:capitalize="sentences"
+        android:singleLine="true"/>
+    <EditText android:id="@+id/edit_last_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_first_new"
+        android:hint="@string/field_last"
+        android:capitalize="sentences"
+        android:singleLine="true"/>
+    <EditText android:id="@+id/edit_email_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_last_new"
+        android:hint="@string/field_email"
+        android:capitalize="sentences"
+        android:inputType="textEmailAddress"/>
+    <EditText android:id="@+id/edit_phone_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_email_new"
+        android:hint="@string/field_phone"
+        android:capitalize="sentences"
+        android:inputType="phone"/>
+
+
+</RelativeLayout>
